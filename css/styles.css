@@ -1,0 +1,128 @@
+/* this file main contain all thing that are not in bootstrap
+	For Example: background-color: margin: font-style:
+	It is better to orginize from general scope to particular scope*/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*
+ * Social
+ */
+
+[class*="zocial-"]:before {
+  color: black;
+  display: inline-block;
+  /* feedback: always prefer to have double quotes for your property values :) */
+  font-family: "zocial", sans-serif;
+  /* feedback: Great work using 3 digit hex values where possible :) */
+  text-shadow: 3px 3px 3px #aaa;
+  width: 2em;
+}
+
+a:hover [class*="zocial-"]:before {
+  color: #3d85c6;
+}
+
+div#social a {
+  margin: 0 1em 0 0;
+}
+
+div#social a:last-of-type {
+  margin: 0;
+}
+
+/*
+ * General
+ */
+
+.text-muted {
+	color: #BCBBBB;
+}
+
+.text-thin {
+	font-weight: 100;
+}
+
+.title-super {
+	font-size: 60px;
+}
+
+.title-logo {
+	margin-top: 20px;
+}
+
+
+body {
+
+	font-family: 'Lato', sans-serif;
+	color: #747704;
+	font-weight: 300;
+  width: 100%;
+  height: 100%;
+}
+
+nav, footer {
+  box-sizing: border-box;
+     border-top: 1px solid #E0E0E0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/*
+ * Footer
+ */
+
+footer {
+  margin: 0 auto;
+  padding: .5em;
+  border-top: 1px solid #E0E0E0;
+  height: 100px;
+  width: 400px;
+}
+
+/*
+ *
+ * Top Level Navigation
+ *
+ */
+
+.nav {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav__list {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.nav__item {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 24%;
+  text-align: center;
+  line-height: 24px;
+  padding: 24px;
+  text-transform: uppercase;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #616161;
+  padding: 1.5em;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+  color: #212121;
+}

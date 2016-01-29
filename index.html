@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="description" content="Christopher Avila P1"/>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>sprida</title>
+    <link rel="icon" href="pic/sprida.ico">
+    <!--feedback
+    Since we are using HTML5 we do not require any type attribute in the link or script tag :)
+    Also always prefer to use double quotes for your attribute values :)
+    -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=zocial"/>
+    <!--feedback
+    You can use bootstrap.min.css instead of bootstrap.css.
+    Its the same file with whitespace removed so is less in size and hence loads faster :)
+    -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+  </head>
+  <!--body-->
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <!--picture-->
+          <picture>
+            <source media="(min-width: 611px)" srcset="pic/100x100.jpg">
+            <source media="(max-width: 610px)" srcset="pic/50x50.jpg">
+            <img class="title-logo" src="pic/100x100.jpg" alt="sprida logo">
+          </picture>
+          <!--menu-->
+          <a id="menu" class="_menu">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+            </svg>
+          </a>
+        </div>
+        <div class="col-md-6 text-right text-uppercase">
+          <h1 class="title-super text-thin">SPRIDA.ME</h1>
+          <h4>spreading knowledge</h4>
+        </div>
+      </div>
+      <!--nav-->
+      <nav id="drawer" class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#">Science</a></li>
+          <li class="nav__item"><a href="#">Technology</a></li>
+          <li class="nav__item"><a href="#">Astronomy</a></li>
+          <li class="nav__item"><a href="#">Books</a></li>
+        </ul>
+      </nav>
+      <!-- content-->
+      <div class="row">
+        <div class="col-md-12">
+          <img class="img-responsive" src="pic/1140x350.jpg" alt="sprida home">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="text-muted">Choose a topic:</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 text-right text-uppercase text-center">
+          <img class="img-responsive" src="pic/ciencia_555x300.jpg" alt="science" data-toggle="modal" data-target="#project1">
+          <h3>Science</h3>
+          <p><a href="http://github.com">Link to project</a></p>
+        </div>
+        <div class="col-md-6 text-right text-uppercase text-center">
+          <img class="img-responsive" src="pic/tech_555x300.jpg" alt="technology" data-toggle="modal" data-target="#project2">
+          <h3>Technology</h3>
+          <p><a href="http://github.com">Link to project</a></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 text-right text-uppercase text-center">
+          <img class="img-responsive" src="pic/astro_555x300.jpg" alt="astronomy" data-toggle="modal" data-target="#project3">
+          <h3>Astronomy</h3>
+          <p><a href="http://github.com">Link to project</a></p>
+        </div>
+        <div class="col-md-6 text-right text-uppercase text-center">
+          <img class="img-responsive" src="pic/books_555x300.jpg" alt="books" data-toggle="modal" data-target="#project4">
+          <h3>Books</h3>
+          <p><a href="http://github.com">Link to project</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 1-->
+    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="Modal1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="Modal1">CC License</h4>
+          </div>
+          <div class="modal-body">
+            <!-- <img class="img-responsive" src="http://placehold.it/400x100">  -->
+            <p><a href="https://flic.kr/p/7ugcz4"> image source - </a>
+            <a href="https://www.flickr.com/photos/mars_p/">image owner - </a>
+            <a href="https://creativecommons.org/licenses/by/2.0/">license link</a></p>
+            License: Attribution 2.0 Generic (CC BY 2.0)
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 2-->
+    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="Modal2" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="Modal2">CC License</h4>
+          </div>
+          <div class="modal-body">
+            <!-- <img class="img-responsive" src="http://placehold.it/400x100"> -->
+            <p><a href="https://flic.kr/p/5wyEen"> image source - </a>
+            <a href="https://www.flickr.com/photos/williamhook/">image owner - </a>
+            <a href="https://creativecommons.org/licenses/by-sa/2.0/">license link</a></p>
+            License: Attribution-ShareAlike 2.0 Generic (CC BY-SA 2.0)
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 3-->
+    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="Modal3" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="Modal3">CC License</h4>
+          </div>
+          <div class="modal-body">
+            <!-- <img class="img-responsive" src="http://placehold.it/400x100"> -->
+            <p><a href="https://flic.kr/p/d7U5x5"> image source - </a>
+            <a href="https://www.flickr.com/photos/fragileoasis/">image owner - </a>
+            <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/">license link</a></p>
+            License: Attribution-NonCommercial-ShareAlike 2.0 Generic (CC BY-NC-SA 2.0)
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 4-->
+    <div class="modal fade" id="project4" tabindex="-1" role="dialog" aria-labelledby="Modal4" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="Modal4">CC License</h4>
+          </div>
+          <div class="modal-body">
+            <!-- <img class="img-responsive" src="http://placehold.it/400x100"> -->
+            <p><a href="https://flic.kr/p/gzaT2"> image source - </a>
+            <a href="https://www.flickr.com/photos/thomashawk/">image owner - </a>
+            <a href="https://creativecommons.org/licenses/by-nc/2.0/">license link</a></p>
+            License: Attribution-NonCommercial 2.0 Generic (CC BY-NC 2.0)
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <!-- usin zocial-->
+    <footer>
+      <div id="social">
+        <a href="https://twitter.com/home?status=@spridame" class="zocial-twitter">Twitter</a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://sprida.me" class="zocial-facebook">Facebook</a>
+        <a href="https://plus.google.com/share?url=https://sprida.me" class="zocial-googleplus">Google+</a>
+        <a href="//github.com/udacity/responsive-images/tree/master/project/final" class="zocial-github">github</a>
+      </div>
+    </footer>
+    <!--menu hide-show-->
+    <!--feedback
+    You can put the script tags just before the end of the body tag! This delays loading of the script till after the page HTML has been loaded therefore giving a more swift and better experience to the user :)
+    -->
+    <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script>
+    /*
+    * Open the drawer when the menu ison is clicked.
+    */
+    var menu = document.querySelector('#menu');
+    var main = document.querySelector('main');
+    var drawer = document.querySelector('.nav');
+    menu.addEventListener('click', function(e) {
+    drawer.classList.toggle('open');
+    e.stopPropagation();
+    });
+    main.addEventListener('click', function() {
+    drawer.classList.remove('open');
+    });
+    </script>
+  </body>
+</html>

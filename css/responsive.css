@@ -1,0 +1,62 @@
+
+/* responsive elements*/
+
+._menu {
+  display: none;
+}
+
+/*
+ * Media
+ */
+
+@media screen and (max-width: 610px) {
+  h1, h2, h4 {
+    text-align: center;
+    font-size: 10px;
+  }
+
+.title-super {
+    font-size: 30px;
+  }
+
+.nav {
+    z-index: 10;
+    background-color: #fff;
+    width: 300px;
+    position: absolute;
+    /* This trasform moves the drawer off canvas. */
+    -webkit-transform: translate(-300px, 0);
+    transform: translate(-300px, 0);
+    /* Optionally, we animate the drawer. */
+    transition: transform 0.3s ease;
+  }
+  .nav.open {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  .nav__item {
+    display: list-item;
+    border-bottom: 1px solid #E0E0E0;
+    width: 100%;
+    text-align: left;
+  }
+
+._menu {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    padding: 1em;
+  }
+._menu svg {
+    width: 32px;
+    fill: #E0E0E0;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .nav {
+    width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
